@@ -1,8 +1,19 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.mdl-layout__header-row {
+	background: #D32F2F;
 }
 
-a {
-  color: #00B7FF;
+.splash-grid {
+	max-width: 960px;
+}
+
+.demo-card-wide.mdl-card {
+	width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+	color: #fff;
+	/*height: 176px;*/
+	background: #D32F2F;
+}
+.demo-card-wide > .mdl-card__menu {
+	color: #fff;
 }

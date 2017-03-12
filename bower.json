@@ -31,6 +31,7 @@
     "jquery.notify": "*",
     "moment": "^2.17.1",
     "underscore": "^1.8.3",
-    "material-design-lite": "^1.3.0"
+    "material-design-lite": "^1.3.0",
+    "material-design-icons": "^3.0.1"
   }
 }

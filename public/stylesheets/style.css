@@ -29,3 +29,8 @@
 .demo-card-wide > .mdl-card__menu {
 	color: #fff;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}

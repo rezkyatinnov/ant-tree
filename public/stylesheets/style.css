@@ -6,6 +6,18 @@
 	max-width: 960px;
 }
 
+.mdl-textfield {
+	width: 100%;
+}
+.mdl-list__item.mdl-list__item--three-line a{
+	height: 100%;
+	width: 100%;
+}
+
+.loginpage-selectbooth-overflow {
+	overflow: visible;
+}
+
 .demo-card-wide.mdl-card {
 	width: 100%;
 }

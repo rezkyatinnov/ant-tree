@@ -1,0 +1,62 @@
+extends mainlayout
+
+block append styles
+	link(href=process.env.APP_BASE_URL+'/stylesheets/style.css' rel='stylesheet')
+
+block content
+	.mdl-grid.splash-grid
+		.mdl-cell.mdl-cell--3-col.mdl-cell--1-col-tablet
+		.mdl-cell.mdl-cell--6-col.mdl-cell--6-col-tablet
+			.loginpage-selectbooth-overflow.demo-card-wide.mdl-card.mdl-shadow--2dp
+				.mdl-card__title
+					h2.mdl-card__title-text Login Booth
+				.loginpage-selectbooth-overflow.mdl-card__supporting-text
+					form(action="#" method="POST")
+						.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+							input.mdl-textfield__input(type="text" id="authUsername")
+							label.mdl-textfield__label(for="authUsername") Username...
+						.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+							input.mdl-textfield__input(type="password" id="authPassword")
+							label.mdl-textfield__label(for="authPassword") Password...
+						#demo-menu-lower-left.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+							input.mdl-textfield__input(type="text" id="authBooth" value="Choose Booth" readonly)
+							label.mdl-textfield__label(for="authBooth") Choose Booth
+						ul.mdl-menu.mdl-menu--top-left.mdl-js-menu.mdl-js-ripple-effect(for="demo-menu-lower-left")
+							li.mdl-menu__item Some Action
+							li.mdl-menu__item.mdl-menu__item--full-bleed-divider Another Action
+							li.mdl-menu__item(disabled="") Disabled Action
+							li.mdl-menu__item Yet Another Action
+						//- .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.getmdl-select.getmdl-select__fix-height
+						//- 	input#sample2.mdl-textfield__input(type="text", value="Belarus", readonly="", tabindex="-1")
+						//- 	label(for="sample2")
+						//- 		i.mdl-icon-toggle__label.material-icons keyboard_arrow_down
+						//- 	label.mdl-textfield__label(for="sample2") Country
+						//- 	ul.mdl-menu.mdl-menu--bottom-left.mdl-js-menu(for="sample2")
+						//- 		li.mdl-menu__item(data-val="DE") Germany
+						//- 		li.mdl-menu__item(data-val="BY") Belarus
+						//- 		li.mdl-menu__item(data-val="RU") Russia
+
+
+						//- .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+						//- 	select.mdl-menu.mdl-menu--bottom-left.mdl-js-menu(id="country" name="professsion")
+						//- 		option.mdl-menu__item(value="")
+						//- 		option.mdl-menu__item(value="option1") option 1
+						//- 		option.mdl-menu__item(value="option2") option 2
+						//- 		option.mdl-menu__item(value="option3") option 3
+						//- 		option.mdl-menu__item(value="option4") option 4
+						//- 	label.mdl-textfield__label(for="country") Country
+						//- .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.getmdl-select.getmdl-select__fullwidth
+						//- 	input.mdl-textfield__input(value="Belarus" type="text" id="country" readonly tabIndex="-1")
+						//- 	label.mdl-textfield__label(for="country") Country
+						//- 	ul.mdl-menu.mdl-menu--bottom-left.mdl-js-menu(for="country")
+						//- 		li.mdl-menu__item Russia
+						//- 		li.mdl-menu__item Belarus
+
+						//- .mdl-selectfield.mdl-js-selectfield.mdl-selectfield--floating-label
+
+						//- 		option(value="option5") option 5
+						//- 	label.mdl-selectfield__label(for="professsion2") Profession
+				.mdl-card__actions.mdl-card--border
+					input.mdl-button.mdl-button--colored.mdl-button--align-right.mdl-js-button.mdl-js-ripple-effect(type="submit" value="Login")
+
+		.mdl-cell.mdl-cell--3-col.mdl-cell--1-col-tablet

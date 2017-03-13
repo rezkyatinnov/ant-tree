@@ -10,23 +10,26 @@ block content
 			.demo-card-wide.mdl-card.mdl-shadow--2dp
 				.mdl-card__supporting-text
 					ul.demo-list-three.mdl-list
-						li.mdl-list__item.mdl-list__item--three-line.mdl-button.mdl-js-button.mdl-js-ripple-effect
-							span.mdl-list__item-primary-content
-								i.material-icons.mdl-list__item-avatar desktop_mac
-								span Monitor
-								span.mdl-list__item-text-body
-									| View the latest queue and get notified
-						li.mdl-list__item.mdl-list__item--three-line.mdl-button.mdl-js-button.mdl-js-ripple-effect
-							span.mdl-list__item-primary-content
-								i.material-icons.mdl-list__item-avatar laptop_windows
-								span Booth
-								span.mdl-list__item-text-body
-									| login as queue booth server
-						li.mdl-list__item.mdl-list__item--three-line.mdl-button.mdl-js-button.mdl-js-ripple-effect
-							span.mdl-list__item-primary-content
-								i.material-icons.mdl-list__item-avatar laptop_mac
-								span Administration
-								span.mdl-list__item-text-body
-									| login as administrator
+						li.mdl-list__item.mdl-list__item--three-line
+							a.mdl-button.mdl-js-button.mdl-js-ripple-effect(href=process.env.APP_BASE_URL+'/monitor')
+								span.mdl-list__item-primary-content
+									i.material-icons.mdl-list__item-avatar desktop_mac
+									span Monitor
+									span.mdl-list__item-text-body
+										| View the latest queue and get notified
+						li.mdl-list__item.mdl-list__item--three-line
+							a.mdl-button.mdl-js-button.mdl-js-ripple-effect(href=process.env.APP_BASE_URL+'/auth/booth')
+								span.mdl-list__item-primary-content
+									i.material-icons.mdl-list__item-avatar laptop_windows
+									span Booth
+									span.mdl-list__item-text-body
+										| login as queue booth server
+						li.mdl-list__item.mdl-list__item--three-line
+							a.mdl-button.mdl-js-button.mdl-js-ripple-effect(href=process.env.APP_BASE_URL+'/auth/admin')
+								span.mdl-list__item-primary-content
+									i.material-icons.mdl-list__item-avatar laptop_mac
+									span Administration
+									span.mdl-list__item-text-body
+										| login as administrator
 
 		.mdl-cell.mdl-cell--3-col.mdl-cell--1-col-tablet
